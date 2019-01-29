@@ -62,7 +62,7 @@ ol, ul {
 .logo{
     width: 180px;
     height: 60px;
-    background: #ffffff;
+    background: url(../img/logo-manageo.png) no-repeat;
 }
 
 .wrapper-menu{
