@@ -185,20 +185,7 @@ ol, ul {
         cursor: pointer;
     }
 }
-.intro{
-    margin-top: -22vw;
-    background: #ffffff;
-    width: 100%;
-    height: 485px;
-    display: flex;
-}
-@media screen and (max-width: 1000px){
-    .intro{
-        margin-top: 0;
-        height:100%;
-        padding: 75px 0;
-    }
-}
+
 
 .billboard{
     position: relative;
@@ -208,6 +195,7 @@ ol, ul {
 @media screen and (max-width: 800px){
     .billboard{
         height:350px;
+        padding-bottom: 0;
     }
 }
 .billboard-content{
@@ -273,22 +261,45 @@ ol, ul {
         /* background-size: cover; */
     }
 }
+
+.intro{
+    margin-top: -22vw;
+    background: #ffffff;
+    width: 100%;
+    height: 485px;
+    display: flex;
+}
+@media screen and (max-width: 1000px){
+    .intro{
+        margin-top: 0;
+        height:100%;
+        padding: 75px 0;
+    }
+}
 .intro-container{
     margin: auto;
-    padding: 0 55px;
-    width: 1370px;
+    padding: 0 45px;
+    width: 1230px;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-content: center;
+    align-items: center;
 }
 @media screen and (max-width: 1000px){
     .intro-container{
+        padding: 0 75px;
+        max-width: 800px;
         flex-flow: column;
     }
 }
 .txt-container{
     max-width: 545px;
+}
+@media screen and (max-width: 1000px){
+    .txt-container{
+        max-width: 650px;
+    }
 }
 .txt-container-column{
     display: flex;
@@ -296,7 +307,7 @@ ol, ul {
     justify-content: left;
 }
 .t-tag{
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Raleway', sans-serif;
     color: rgb(55, 68, 78);
     font-weight: bold;
@@ -304,7 +315,7 @@ ol, ul {
     text-align: left;
 }
 .t-h2{
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: 'Raleway', sans-serif;
     color: rgb(145, 168, 208);
     font-weight: bold;
@@ -314,9 +325,10 @@ ol, ul {
     -ms-transform: matrix( 1.61527684693262,0,0,1.61456919933393,0,0); */
 }
 .t-txt {
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: 'Raleway', sans-serif;
     color: rgb(55, 68, 78);
+    font-weight: 600;
     line-height: 1.2;
     /* -moz-transform: matrix( 0.70278184480234,0,0,0.70247395833333,0,0);
     -webkit-transform: matrix( 0.70278184480234,0,0,0.70247395833333,0,0);
@@ -433,4 +445,46 @@ ol, ul {
     /* -moz-transform: matrix( 0.70278184480234,0,0,0.70247395833333,0,0);
     -webkit-transform: matrix( 0.70278184480234,0,0,0.70247395833333,0,0);
     -ms-transform: matrix( 0.70278184480234,0,0,0.70247395833333,0,0); */
-  }
+}
+.footer1{
+    background-color: rgb(36, 41, 48);
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.footer2{
+    background-color:rgb(55, 68, 78);
+    height: 100px;
+}
+.footer1-container{
+    max-width: 510px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-footer{
+    width: 195px;
+    height: 90px;
+    background: url("../img/logo-manageo.png") no-repeat;
+}
+.menu-footer{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.social-nets-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 200px;
+}
+.social-net-icon{
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+}
+.social-net-icon:hover{
+    cursor: pointer;
+    background: rgb(113, 204, 81);
+}
