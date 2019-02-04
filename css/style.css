@@ -147,13 +147,20 @@ ol, ul {
 .rm1{
     width: 20px;
     height: 20px;
-    background: #ffffff;
+    background: url(../img/rm1.png) no-repeat;
+    background-size: 100%;
+}
+.rm2{
+    width: 20px;
+    height: 20px;
+    background: url(../img/rm2.png) no-repeat;
+    background-size: 100%;
 }
 .logo:hover, .rm1:hover, .language:hover{
     cursor: pointer;
 }
 
-.rm2{
+.rm3{
     width: 2px;
     height: 30px;
     background: #ffffff;
@@ -165,7 +172,7 @@ ol, ul {
         width: 75px;
         box-sizing: border-box;;
     }
-    .language, .rm2{
+    .language, .rm3{
         display: none
     }
 }
@@ -217,6 +224,11 @@ ol, ul {
 @media screen and (max-width: 800px){
     .billboard{
         height:350px;
+    }
+}
+@media screen and (max-width: 500px){
+    .billboard{
+        height:200px;
     }
 }
 
@@ -272,6 +284,17 @@ ol, ul {
         padding: 75px 0;
     }
 }
+@media screen and (max-width: 650px){
+    .intro{
+        padding: 45px 0;
+    }
+}
+@media screen and (max-width: 450px){
+    .intro{
+        padding: 30px 0;
+    }
+}
+
 .intro-container{
     margin: auto;
     padding: 0 45px;
@@ -287,6 +310,16 @@ ol, ul {
         padding: 0 75px;
         max-width: 800px;
         flex-flow: column;
+    }
+}
+@media screen and (max-width: 650px){
+    .intro-container{
+        padding: 0 45px;
+    }
+}
+@media screen and (max-width: 450px){
+    .intro-container{
+        padding: 0 15px;
     }
 }
 .txt-container{
@@ -332,6 +365,8 @@ ol, ul {
 @media screen and (max-width: 1270px){
     .solution-items-container{
         max-width: 685px;
+        height: 630px;
+        align-content: space-between;
     }
 }
 .solution-item{
@@ -361,7 +396,7 @@ ol, ul {
     }
     .solution-items-container{
         flex-flow: column;
-        width: 100%;
+        max-width: 100%;
         height: 100%;
         padding: 0;
     }
@@ -376,6 +411,13 @@ ol, ul {
         max-width: 385px;
     }
 }
+@media screen and (max-width: 450px){
+    .solution-item{
+        box-sizing: border-box;
+        padding: 35px 15px;
+    }
+}
+
 .margintop25px{
     margin-top: 25px;
 }
@@ -387,7 +429,23 @@ ol, ul {
     padding: 100px 0;
     background: url(../img/chiffers-bg.png) no-repeat;
     margin: auto
+}
 
+@media screen and (max-width: 800px){
+    .chiffres{
+        padding: 75px 0;
+        background-size: 100% 630px;
+    }
+}
+@media screen and (max-width: 550px){
+    .chiffres{
+        background-size: 100% 780px;
+    }
+}
+@media screen and (max-width: 450px){
+    .chiffres{
+        padding: 35px 0;
+    }
 }
 .chiffres-container{
     margin: 90px auto 0;
@@ -398,10 +456,27 @@ ol, ul {
     align-content: space-between;
     height: 300px;
 }
+@media screen and (max-width: 1000px){
+    .chiffres-container{
+        margin: 50px auto 0;
+    }
+}
+@media screen and (max-width: 550px){
+    .chiffres-container{
+        margin: 20px auto 0;
+        height: 485px;
+    }
+}
+@media screen and (max-width: 400px){
+    .chiffres-container{
+        height: 485px;
+    }
+}
 .chiffres-title{
-    width: 630px;
+    max-width: 630px;
+    padding: 0 15px;
+    margin: auto;
     text-align: center;
-    margin: auto
 }
 .number-container{
     width: 320px;
@@ -410,6 +485,11 @@ ol, ul {
     flex-flow: wrap;
     justify-content: center;
     align-content: baseline;
+}
+@media screen and (max-width: 800px){
+    .number-container{
+        width: 250px;
+    }
 }
 .contact{
     width: 100%;
@@ -440,13 +520,20 @@ ol, ul {
     align-content: space-between;
     height: 530px;
 }
-
+@media screen and (max-width: 800px){
+    .api{
+        width: 100%;
+        padding: 50px 0 50px;
+        height: 100%;
+    }
+}
 .row-api{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     width: 1280px;
 }
+
 @media screen and (max-width: 1270px){
     .row-api{
         flex-flow: column;
@@ -456,6 +543,11 @@ ol, ul {
         display: none;
     }
 }
+@media screen and (max-width: 800px){
+    .row-api{
+        width: 100%;
+    }
+}
 .api-title-container{
     box-sizing: border-box;
     display: flex;
@@ -463,6 +555,14 @@ ol, ul {
     width: 625px;
     height: 250px;
     padding: 25px 25px 40px 0;
+}
+
+@media screen and (max-width: 650px){
+    .api-title-container{
+        width: 95%;
+        height: 100%;
+        margin-left: 15px;
+    }
 }
 .api-item{
     box-sizing: border-box;
@@ -474,6 +574,15 @@ ol, ul {
     background: #ffffff;
     box-shadow: 0 0 15px  rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (max-width: 650px){
+    .api-item{
+        width: 95%;
+        height: 100%;
+        padding: 25px 20px 25px 30px;
+    }
+}
+
 .footer1{
     background-color: rgb(36, 41, 48);
     display: flex;
