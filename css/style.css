@@ -590,10 +590,12 @@ ol, ul {
     align-content: center;
     padding: 150px 0;
 }
-.footer2{
-    background-color:rgb(55, 68, 78);
-    height: 100px;
+@media screen and (max-width: 1000px){
+    .footer1{
+        padding: 75px 0;
+    }
 }
+
 .footer1-container{
     max-width: 510px;
     margin: auto;
@@ -601,16 +603,36 @@ ol, ul {
     flex-direction: column;
     align-items: center;
 }
+@media screen and (max-width: 550px){
+    .footer1-container{
+        max-width: 95%;
+    }
+}
 .logo-footer{
     width: 285px;
     height: 95px;
     background: url("../img/logo-manageo.png") no-repeat;
-    background-size: 285px;
+    background-size: 100%;
 }
+@media screen and (max-width: 1000px){
+    .logo-footer{
+        width: 235px;
+        height: 80px;
+    }
+}
+
 .menu-footer{
     display: flex;
     flex-flow: row nowrap;
     margin-top: 60px;
+    align-items: center;
+    width: 510px;
+    justify-content: space-between;
+}
+@media screen and (max-width: 550px){
+    .menu-footer{
+        max-width: 95%;
+    }
 }
 .social-media-container{
     display: flex;
@@ -633,4 +655,78 @@ ol, ul {
 }
 .api-arrow{
     margin-top: 25px;
+}
+.footer2{
+    background-color:rgb(55, 68, 78);
+    min-height: 100px;
+}
+.footer2-container{
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 35px 15px 20px;
+}
+@media screen and (max-width: 400px){
+    .footer2-container{
+        padding-top: 20px;
+    }
+}
+.footer-logo-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 270px;
+    justify-content: space-between;
+    align-content: baseline;
+}
+@media screen and (max-width: 1000px){
+    .footer-logo-container{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 800px){
+    .footer-logo-container{
+        width: 200px;
+    }
+}
+.logo-1{
+    background: url(../img/logo-altares.png) no-repeat;
+    background-size: 100%; 
+    width: 70px;
+    height: 45px;
+}
+
+@media screen and (max-width: 400px){
+    .logo-1{
+        width: 50px;
+        height: 31px;
+    }
+}
+.logo-2{
+    background: url(../img/Logo_wwn.png) no-repeat;
+    background-size: 100%; 
+    width: 150px;
+    height: 25px;
+    align-self: center;
+}
+@media screen and (max-width: 800px){
+    .logo-2{
+        margin-top:15px; 
+    }
+}
+@media screen and (max-width: 400px){
+    .logo-2{
+        width: 90px;
+        height: 13px;
+    }
+}
+.txt-footer-container{
+    
+    max-width: 530px;
+    padding-left: 15px;
+}
+.menu-item:hover {
+    cursor: pointer;
+    color: rgb(113, 204, 81);
 }
