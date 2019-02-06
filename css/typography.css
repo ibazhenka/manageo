@@ -190,17 +190,12 @@
 }
 
 .t-title-api{
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-family: "Lato Bold", sans-serif;
     color: rgb(74, 99, 161);
     line-height: 1.2;
 }
-.t-red{
-    color: rgb(247, 120, 107);
-}
-.t-green{
-    color: rgb(113, 204, 81);
-}
+
 .t-api{
     font-size: 0.8em;
     color: rgb(145, 168, 208);
