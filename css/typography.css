@@ -33,6 +33,12 @@
     line-height: 1.2;
     font-weight: 300;
 }
+@font-face{
+    font-family: "Lato Bold";
+    src: url(../fonts/Lato-Bold.ttf);
+    line-height: 1.2;
+    font-weight: 700;
+}
 
 .t-quest-conact-header {
     font-size: 0.8em;
@@ -149,9 +155,10 @@
 .t-title-chiffres{
     width: 200px;
     font-size: 1em;
-    font-family: "Raleway Bold", sans-serif;
+    font-family: "Raleway SemiBold", sans-serif;
     color: rgb(255, 255, 255);
 }
+
 .t-title-contact{
     font-size: 2.5em;
     font-family: "Raleway SemiBold", sans-serif;
@@ -184,10 +191,19 @@
 
 .t-title-api{
     font-size: 1.5em;
-    font-family: 'Raleway', sans-serif;
-    color: rgb(145, 168, 208);
-    font-weight: bold;
+    font-family: "Lato Bold", sans-serif;
+    color: rgb(74, 99, 161);
     line-height: 1.2;
+}
+.t-red{
+    color: rgb(247, 120, 107);
+}
+.t-green{
+    color: rgb(113, 204, 81);
+}
+.t-api{
+    font-size: 0.8em;
+    color: rgb(145, 168, 208);
 }
 .t-subtitle-api{
     font-size: 0.9em;
