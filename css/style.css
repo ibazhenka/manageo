@@ -642,14 +642,24 @@ ol, ul {
     margin-top: 30px;
 }
 .social-media-icon{
-    width: 30px;
-    height: 30px;
-    background: #ffffff;
+    display: flex;
+    align-content: center;
 }
-.social-media-icon:hover{
+
+.social-media-icon svg{
+    width: 25px;
+    height: 25px;
+}
+.smi{
+    fill: #ffffff;
+}
+.smi:hover{
+    fill: rgb(113, 204, 81);
+}
+.social-media-icon svg{
     cursor: pointer;
-    background: rgb(113, 204, 81);
 }
+
 .api-txt{
     margin-top: 25px;
 }
